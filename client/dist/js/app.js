@@ -35520,7 +35520,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-			value: true
+		value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -35538,70 +35538,15 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var HomePage = function HomePage() {
-			return _react2.default.createElement(
-					'div',
-					null,
-					_react2.default.createElement(
-							_Card.Card,
-							{ className: 'container' },
-							_react2.default.createElement(_Card.CardTitle, { title: 'Home Page', subtitle: '.' })
-					),
-					_react2.default.createElement(
-							_Card.Card,
-							{ className: 'container' },
-							_react2.default.createElement(_Card.CardTitle, { title: 'Add Article to DB' }),
-							_react2.default.createElement(
-									_RadioButton.RadioButtonGroup,
-									{ name: 'catagories', defaultSelected: 'not_light', style: { display: 'block' } },
-									_react2.default.createElement(_RadioButton.RadioButton, {
-											value: 'NFL',
-											label: 'NFL',
-											style: { marginBottom: '16px', textAlign: 'left' }
-									}),
-									_react2.default.createElement(_RadioButton.RadioButton, {
-											value: 'NBA',
-											label: 'NBA',
-											style: { marginBottom: '16px', textAlign: 'left' }
-									}),
-									_react2.default.createElement(_RadioButton.RadioButton, {
-											value: 'MLB',
-											label: 'MLB',
-											style: { marginBottom: '16px', textAlign: 'left' }
-									})
-							),
-							_react2.default.createElement(_TextField2.default, {
-									hintText: 'Article Name',
-									floatingLabelText: 'Article Name',
-									floatingLabelFixed: true
-							}),
-							_react2.default.createElement('br', null),
-							_react2.default.createElement(_TextField2.default, {
-									hintText: 'Article Author',
-									floatingLabelText: 'Article Author',
-									floatingLabelFixed: true
-							}),
-							_react2.default.createElement('br', null),
-							_react2.default.createElement(_TextField2.default, {
-									hintText: 'Write a short description about the article.',
-									floatingLabelText: 'Short Article Description',
-									floatingLabelFixed: true,
-									style: { textAlign: 'left', padding: '20px' }
-									//floatingLabelStyle={ { transform: 'perspective(1px) scale(0.75) translate3d(2px, -28px, 0)' } }
-									, multiLine: true,
-									rows: 3,
-									rowsMax: 10
-							}),
-							_react2.default.createElement('br', null),
-							_react2.default.createElement(_TextField2.default, {
-									hintText: 'Full Article',
-									floatingLabelText: 'Full Article',
-									fullWidth: true,
-									multiLine: true,
-									rows: 10,
-									rowsMax: 50
-							})
-					)
-			);
+		return _react2.default.createElement(
+			'div',
+			null,
+			_react2.default.createElement(
+				_Card.Card,
+				{ className: 'container' },
+				_react2.default.createElement(_Card.CardTitle, { title: 'Home Page', subtitle: '.' })
+			)
+		);
 	};
 
 	exports.default = HomePage;
@@ -43909,7 +43854,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+			value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -43918,27 +43863,92 @@
 
 	var _Card = __webpack_require__(400);
 
+	var _TextField = __webpack_require__(457);
+
+	var _TextField2 = _interopRequireDefault(_TextField);
+
+	var _RadioButton = __webpack_require__(466);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Dashboard = function Dashboard(_ref) {
-	  var secretData = _ref.secretData;
-	  return _react2.default.createElement(
-	    _Card.Card,
-	    { className: 'container' },
-	    _react2.default.createElement(_Card.CardTitle, {
-	      title: 'Dashboard',
-	      subtitle: 'You should get access to this page only after authentication.'
-	    }),
-	    secretData && _react2.default.createElement(
-	      _Card.CardText,
-	      { style: { fontSize: '16px', color: 'green' } },
-	      secretData
-	    )
-	  );
+			var secretData = _ref.secretData;
+			return _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+							_Card.Card,
+							{ className: 'container' },
+							_react2.default.createElement(_Card.CardTitle, {
+									title: 'Dashboard',
+									subtitle: 'You should get access to this page only after authentication.'
+							}),
+							secretData && _react2.default.createElement(
+									_Card.CardText,
+									{ style: { fontSize: '16px', color: 'green' } },
+									secretData
+							)
+					),
+					_react2.default.createElement(
+							_Card.Card,
+							{ className: 'container' },
+							_react2.default.createElement(_Card.CardTitle, { title: 'Add Article to DB' }),
+							_react2.default.createElement(
+									_RadioButton.RadioButtonGroup,
+									{ name: 'catagories', defaultSelected: 'not_light', style: { display: 'block' } },
+									_react2.default.createElement(_RadioButton.RadioButton, {
+											value: 'NFL',
+											label: 'NFL',
+											style: { marginBottom: '16px', textAlign: 'left', width: '30%' }
+									}),
+									_react2.default.createElement(_RadioButton.RadioButton, {
+											value: 'NBA',
+											label: 'NBA',
+											style: { marginBottom: '16px', textAlign: 'left', width: '30%' }
+									}),
+									_react2.default.createElement(_RadioButton.RadioButton, {
+											value: 'MLB',
+											label: 'MLB',
+											style: { marginBottom: '16px', textAlign: 'left', width: '30%' }
+									})
+							),
+							_react2.default.createElement(_TextField2.default, { style: { border: "solid, 10px, black" },
+									hintText: 'Article Name',
+									floatingLabelText: 'Article Name',
+									floatingLabelFixed: true
+							}),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(_TextField2.default, {
+									hintText: 'Article Author',
+									floatingLabelText: 'Article Author',
+									floatingLabelFixed: true
+							}),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(_TextField2.default, {
+									hintText: 'Write a short description about the article.',
+									floatingLabelText: 'Short Article Description',
+									floatingLabelFixed: true,
+									style: { textAlign: 'left', padding: '20px' }
+									//floatingLabelStyle={ { transform: 'perspective(1px) scale(0.75) translate3d(2px, -28px, 0)' } }
+									, multiLine: true,
+									rows: 3,
+									rowsMax: 10
+							}),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(_TextField2.default, {
+									hintText: 'Full Article',
+									floatingLabelText: 'Full Article',
+									fullWidth: true,
+									multiLine: true,
+									rows: 10,
+									rowsMax: 50
+							})
+					)
+			);
 	};
 
 	Dashboard.propTypes = {
-	  secretData: _react.PropTypes.string.isRequired
+			secretData: _react.PropTypes.string.isRequired
 	};
 
 	exports.default = Dashboard;

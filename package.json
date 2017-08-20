@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --use-strict index.js",
-    "server": "node index.js",
+    "server": "node  --use-strict index.js",
     "bundle": "webpack"
   },
   "repository": {
